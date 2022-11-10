@@ -12,7 +12,7 @@ options(pillar.advice = FALSE, pillar.min_title_chars = Inf)
 
 # ------------------------------------------------------------------------------
 
-guild_run("ames_glmnet_guild_script.R")
+guild_run("ames_glmnet_guild_script.R", echo = FALSE)
 guild_view()
 
 # ------------------------------------------------------------------------------
