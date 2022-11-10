@@ -45,9 +45,21 @@ ames_val <- assessment(ames_rs$splits[[1]])
 # NOTE :-O this is sooo unnatural. We would normally use values of tune() for
 # them and _not_ include them as global variables.
 
+#| description: spline degrees of freedom for longitude
+#| min: 2L
+#| max: 50L
 longitude_df <- 40L
+#| description: spline degrees of freedom for latitude
+#| min: 2L
+#| max: 50L
 latitude_df <- 40L
+#| description: L2 penalty
+#| min: 0.0
+#| max: 1.0
 pen_val <- 0.001
+#| description: Mixture of L1 and L2 penalty
+#| min: 0.0
+#| max: 1.0
 mix_val <- 1.0
 
 # ------------------------------------------------------------------------------
