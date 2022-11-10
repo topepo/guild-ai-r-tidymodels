@@ -62,4 +62,4 @@ res <-
 
 autoplot(res, metric = "rmse")
 
-show_best(res)
+show_best(res, metric = "rmse")
