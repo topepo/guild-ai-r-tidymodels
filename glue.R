@@ -68,13 +68,14 @@ prep_inital <- function(past_results, parameter_set) {
 }
 
 guild_gp <- function(past_results,
-                     parameter_set,
+                     parameter_info,
                      target = "minimize",
                      objective = tune::exp_improve(),
                      control = tune::control_bayes(),
                      ...) {
   
   # prep guild inputs to mimic tune inputs as closely as necessary
+  parameter_set <- guild_to_parameter_set(parameter_info)
   mean_stats_almost <- prep_inital(past_results, parameter_set)
   metrics_name <- unique(mean_stats_almost$.metric)
   maximize <- target == "maximize"

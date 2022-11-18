@@ -59,4 +59,4 @@ past_results <- data.frame(
            0.0643535245578563, 0.064734873635114)
 )
 
-guild_gp(past_results, params, target = "minimize")
+guild_gp(past_results, parameter_info, target = "minimize")
